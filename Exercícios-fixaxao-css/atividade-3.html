@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Exercício - DIV centralizado</title>
+
+        <style>
+            .div-central {
+                background-color: red;
+                width: 500px;
+                height: 500px;
+                top: 50%;
+                left: 50%;
+                margin-left : -250px; /* para centralizar horizontalmente */
+                margin-top  : -250px; /* para centralizar verticalmente */
+                position: absolute;
+                padding: 5px;
+            }
+            
+            .content {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                
+                font-size: 18px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="div-central">
+            <div class="content">
+                <article>
+                    <p>3 - O que acontece quando adicionamos um padding: 5px; a configuração da classe css que estamos utilizando para configurar este div centralizado?</p>
+                    <p>Aumenta o tamanho da DIV central tanto para o lado direito quanto para baixo</p>
+                </article>
+            </div>
+        </div>
+    </body>
+</html>
