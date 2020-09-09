@@ -1,0 +1,159 @@
+body{
+    background-color: lightgray;
+}
+
+/** MENU SUPERIOR **/
+ul.menu { 
+    list-style:none;
+    text-align: center;
+}
+
+ul.menu li { 
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+ul.menu li a {
+    color:rgb(0, 0, 0); 
+    font-size:36px;
+    font-weight:bold;
+    text-decoration: none;
+    text-align:center; 
+    padding: 1% 5% 1% 5%;
+    background:url('src/image/menu-button-background.png') no-repeat; 
+    background-size: 300% 100%;
+}
+
+
+ul.menu li a:hover {
+    background:url('src/image/menu-button-background.png') no-repeat; 
+    background-size: 80% 100%;
+}
+
+
+
+
+/** CARD PRINCIPAL **/
+
+.card {
+    background-color: rgb(30, 50, 75);
+    border: 3px solid rgb(60, 98, 145);
+    border-radius: 25px;
+}
+
+.card .card-left{
+    text-align: center;
+    border-left: 1px solid lightgray;
+}
+
+.profile-photo{   
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.card-title{
+    color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 10px;
+}
+
+.card-description{
+    color: white;
+    font-size: 24px;
+}
+
+.infos ul {
+    list-style-type: none;
+}
+
+/** BOTÕES **/
+
+.links {
+    padding-left: 10%;
+    text-align: justify;
+}
+
+.fa {
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 50%;
+    color: white;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-instagram {
+    background: #125688;
+}
+
+.fa-github {
+    background: #24292e;
+}
+
+
+/** CARD SECUNDÁRIO **/
+
+.card-secundary {
+    margin-top: 50px;
+    background-color: rgb(60, 98, 145);
+    border: 3px solid rgb(30, 50, 75);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.card-secundary p {
+    text-indent: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    color: white;
+    font-size: 24px;
+}
+
+/** Formulário de contato **/
+
+input{
+    height: 36px;
+    width:80%;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+textarea{
+    width:100%;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+form button {
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 2% 10%;
+    background-color: rgb(112, 177, 255);
+    text-align: justify;
+    color: white;
+    font-size: 32px;
+}
+
+form .card-title{
+    text-align: center;
+}
