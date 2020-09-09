@@ -21,13 +21,13 @@ ul.menu li a {
     text-decoration: none;
     text-align:center; 
     padding: 1% 5% 1% 5%;
-    background:url('src/image/menu-button-background.png') no-repeat; 
+    background:url('../src/image/menu-button-background.png') no-repeat; 
     background-size: 300% 100%;
 }
 
 
 ul.menu li a:hover {
-    background:url('src/image/menu-button-background.png') no-repeat; 
+    background:url('../src/image/menu-button-background.png') no-repeat; 
     background-size: 80% 100%;
 }
 
@@ -50,7 +50,6 @@ ul.menu li a:hover {
 .profile-photo{   
     margin: 10%;
     width: 80%;
-    height: 80%;
     border-radius: 25px;
 }
 
@@ -73,6 +72,7 @@ ul.menu li a:hover {
 /** BOTÕES **/
 
 .links {
+    padding-top: 10%;
     padding-left: 10%;
     text-align: justify;
 }
