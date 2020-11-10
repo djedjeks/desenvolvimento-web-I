@@ -31,11 +31,62 @@
                         $_SESSION["NUM"] = 0;
                         break;
                     case "=":
-                        $_SESSION["OPERADOR"] = "";
+                        realizaCalculo();
+                        $_SESSION["NUM"] = $_SESSION["RESULTADO"];
+                        $_SESSION["RESULTADO"] = 0;
                         break;
-                    default:
-                        $_SESSION["OPERADOR"] = $_POST["op"];
+                    case "+":
+                        if($_SESSION["OPERADOR"] != ""){
+                            realizaCalculo();
+                        }
+                        $_SESSION["OPERADOR"] = "+";
+                        $_SESSION["RESULTADO"] = $_SESSION["NUM"];
+                        $_SESSION["NUM"] = 0;
+                        break;
+                    case "-":
+                        if($_SESSION["OPERADOR"] != ""){
+                            realizaCalculo();
+                        }
+                        $_SESSION["OPERADOR"] = "-";
+                        $_SESSION["RESULTADO"] = $_SESSION["NUM"];
+                        $_SESSION["NUM"] = 0;
+                        break;
+                    case "X":
+                        if($_SESSION["OPERADOR"] != ""){
+                            realizaCalculo();
+                        }
+                        $_SESSION["OPERADOR"] = "X";
+                        $_SESSION["RESULTADO"] = $_SESSION["NUM"];
+                        $_SESSION["NUM"] = 0;
+                        break;
+                    case "%":
+                        if($_SESSION["OPERADOR"] != ""){
+                            realizaCalculo();
+                        }
+                        $_SESSION["OPERADOR"] = "%";
+                        $_SESSION["RESULTADO"] = $_SESSION["NUM"];
+                        $_SESSION["NUM"] = 0;
+                        break;
                 }
+            }
+
+            function realizaCalculo(){
+                switch ($_SESSION["OPERADOR"]){
+                    case "+":
+                        $_SESSION["RESULTADO"] = $_SESSION["RESULTADO"] + $_SESSION["NUM"];
+                        break;
+                    case "-":
+                        $_SESSION["RESULTADO"] = $_SESSION["RESULTADO"] - $_SESSION["NUM"];
+                        break;
+                    case "X":
+                        $_SESSION["RESULTADO"] = $_SESSION["RESULTADO"] * $_SESSION["NUM"];
+                        break;
+                    case "%":
+                        $_SESSION["RESULTADO"] = floatval($_SESSION["RESULTADO"]) / floatval($_SESSION["NUM"]);
+                        break;
+                }
+                $_SESSION["OPERADOR"] = "";
+                $_SESSION["NUM"] = 0;
             }
         ?>
 
@@ -47,7 +98,7 @@
         <main>
             <form method="post" class="container calculadora" action="index.php">
                 <div class="row">
-                    <div class="col-12 resultado"> <?php echo $_SESSION["NUM"] ?></div>
+                    <div class="col-12 resultado"> <?php echo $_SESSION["NUM"] <> 0 ? $_SESSION["NUM"] : $_SESSION["RESULTADO"]; ?></div>
                 </div>
                 <div class="row">
                     <input class="col-3 text-center bot_calc" type="submit" name="num" value="7" >
