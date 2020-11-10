@@ -1,0 +1,15 @@
+.calculadora{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bot_calc{
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.resultado{
+    border: 1px solid black;
+    padding: 2%;
+    text-align: end;
+}
