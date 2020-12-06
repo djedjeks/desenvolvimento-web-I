@@ -5,13 +5,13 @@
         if(isset($_GET['page'])) {
             switch ($_GET['page']) {
                 case 'categoria':
-                    include_once('./pages/categorias/index.php');
+                    include_once('./pages/categoria/index.php');
                     break;
                 case 'fornecedor':
-                    include_once('./pages/fornecedores/index.php');
+                    include_once('./pages/fornecedor/index.php');
                     break;
                 case 'produto':
-                    include_once('./pages/produtos/index.php');
+                    include_once('./pages/produto/index.php');
                     break;
                 case 'logoff':
                     $_SESSION['usuariologado'] = false;
