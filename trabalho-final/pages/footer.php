@@ -1,4 +1,4 @@
-    <footer class="footer fixed-bottom">
+    <footer class="footer float-bottom">
         <hr/>
         Desenvolvido por: Djeferson Preis 
     </footer>
