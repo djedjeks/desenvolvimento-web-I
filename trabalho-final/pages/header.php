@@ -10,25 +10,25 @@
     
     <body>
         <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="?page=home">Início</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="?page=home">Início</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=categoria">Categoria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=fornecedor">Fornecedor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=produto">Produto</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="nav-link float-right" href="?page=logoff">Desconectar</a>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=categoria">Categoria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=fornecedor">Fornecedor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=produto">Produto</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link float-right" href="?page=logoff">Desconectar</a>
+            </nav>
         </header>
