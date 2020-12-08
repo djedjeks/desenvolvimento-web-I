@@ -30,7 +30,6 @@
             $stmt->execute();
             header('Location: ?page=fornecedor');
         } catch (PDOException $e) {
-            echo $e.getMessage();
             echo "<h2 class='danger'> Falha ao tentar cadastrar Fornecedor! Verifique as informações e tente novamente. </h2>";
         }
     }
@@ -52,11 +51,11 @@
         <form method="POST">
             <div class="form-group">
                 <label for="IDFornecedor">ID do fornecedor:</label>
-                <input type="number" class="form-control" name="IDFornecedor" id="IDFornecedor" placeholder="ID do Fornecedor" />
+                <input type="number" class="form-control" name="IDFornecedor" id="IDFornecedor" placeholder="ID do Fornecedor" required/>
             </div>
             <div class="form-group">
                 <label for="nomeFornecedor">Nome do Fornecedor:</label>
-                <input type="text" class="form-control" name="nomeFornecedor" id="nomeFornecedor" placeholder="Nome do Fornecedor" />
+                <input type="text" class="form-control" name="nomeFornecedor" id="nomeFornecedor" placeholder="Nome do Fornecedor" required/>
             </div>
             <div class="row">
                 <div class="col-6">
@@ -108,7 +107,7 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input type="phone" class="form-control" name="telefone" id="telefone" placeholder="Telefone" />
+                        <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="Telefone" />
                     </div>
                 </div>
                 <div class="col-6">

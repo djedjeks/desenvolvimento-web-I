@@ -30,11 +30,11 @@
         <form method="POST">
             <div class="form-group">
                 <label for="IDCategoria">ID da Categoria:</label>
-                <input type="number" class="form-control" name="IDCategoria" id="IDCategoria" placeholder="ID da Categoria" />
+                <input type="number" class="form-control" name="IDCategoria" id="IDCategoria" placeholder="ID da Categoria" required/>
             </div>
             <div class="form-group">
                 <label for="nome">Nome da Categoria:</label>
-                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome da Categoria" />
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome da Categoria" required/>
             </div>
             <div class="form-group">
                 <label for="desc">Descrição para a Categoria:</label>
